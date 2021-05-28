@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+opencv-contrib-python
+tensorflow
+torch
+torchvision
+albumentations
+einops

@@ -101,7 +101,7 @@ class MLPMixer(nn.Module):
         self.head = nn.Linear(self.total_channels, self.total_classes)
         
     def forward(self, x):
-        out = self.patch_to_embedding(out)
+        out = self.patch_to_embedding(x)
         out = einops.rearrange(out, 'n c h w -> n (h w) c')
         
         for mixer in self.mixer_blocks:
